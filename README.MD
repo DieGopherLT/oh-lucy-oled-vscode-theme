@@ -2,11 +2,15 @@
 
 ---
 
-Customizable. Change the colors in `color.mjs` & run `npm run build` to build the theme.
+Customizable. Change the colors in `color.mjs` & run `npm run build` to build
+the theme.
 
 To apply your customized theme copy this entire folde to `~/.vscode/extensions`.
 
 <!-- # Publish Commands
 npx vsce login Hermitter
 npx vsce package
-npx vsce publish -->
+npx vsce publish
+
+npx ovsx publish -p <token>
+-->

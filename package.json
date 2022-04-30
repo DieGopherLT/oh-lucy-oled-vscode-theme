@@ -1,10 +1,10 @@
 {
-  "name": "my-lucy-vscode",
-  "displayName": "lucy",
-  "description": "Soft but clear syntax theme",
-  "version": "2.8.2",
+  "name": "oh-lucy-vscode",
+  "displayName": "oh lucy",
+  "description": "a re-upload of a soft but clear syntax theme",
+  "version": "1.0.0",
   "publisher": "Hermitter",
-  "repository": "https://github.com/hermitter/my-lucy-vscode-theme",
+  "repository": "https://github.com/hermitter/oh-lucy-vscode-theme",
   "scripts": {
     "build": "node --experimental-modules src/index.mjs",
     "release": "npm run build && git add dist && git commit -m build-theme && npm version patch & vsce publish && git push"
@@ -19,12 +19,12 @@
   "contributes": {
     "themes": [
       {
-        "label": "lucy",
+        "label": "oh-lucy",
         "uiTheme": "vs-dark",
         "path": "./dist/lucy.json"
       },
       {
-        "label": "lucy-evening",
+        "label": "oh-lucy-evening",
         "uiTheme": "vs-dark",
         "path": "./dist/lucy-evening.json"
       }
@@ -40,5 +40,8 @@
   ],
   "dependencies": {
     "chroma-js": "^2.1.0"
+  },
+  "devDependencies": {
+    "vsce": "^2.7.0"
   }
 }

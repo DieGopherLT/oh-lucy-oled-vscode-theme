@@ -3,6 +3,12 @@
 # dependencies
 /node_modules
 
+# VS Code
+*.vsix
+
+# nix
+.direnv
+result*
 # misc
 .DS_Store
 .env.local

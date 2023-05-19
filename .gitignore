@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 
+# nix
+.direnv
+result*
 # misc
 .DS_Store
 .env.local

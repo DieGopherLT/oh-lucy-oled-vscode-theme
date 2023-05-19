@@ -2,6 +2,13 @@ export default ({ name, colors }) => ({
   name,
   type: 'dark',
   colors: {
+    // Changes
+    "editorInlayHint.foreground": colors.dim2,
+    "editorInlayHint.background": colors.translucent8,
+    "editorInlayHint.typeForeground": colors.dim3,
+    "editorInlayHint.parameterForeground": colors.dim4,
+
+    // Original Lucy
     focusBorder: colors.dim2,
     foreground: colors.pure2,
     'widget.shadow': colors.background1,

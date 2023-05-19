@@ -25,9 +25,9 @@ const calculate_evening_theme = (color) => {
   return chroma({ r: newRed, g: newGreen, b: newBlue, a: alpha }).hex();
 }
 
-/* REMINDER: Variants need to be listed as seperate themes in the package.json */
 const VARIANTS = {
   // Original Lucy themes
+  // Note: Excluded from package.json until Oh Lucy becomes significantly different
   'lucy': {
     theme: og_theme,
     colors: og_colors,
@@ -38,31 +38,31 @@ const VARIANTS = {
     colors: og_colors,
     getColor: (color) => calculate_evening_theme(color),
   },
-  // Modified Lucy themes
+  // Oh Lucy themes
   'oh-lucy': {
-    theme: og_theme,
-    colors: og_colors,
+    theme: theme,
+    colors: colors,
     getColor: (color) => color,
   },
   'oh-lucy-evening': {
-    theme: og_theme,
-    colors: og_colors,
+    theme: theme,
+    colors: colors,
     getColor: (color) => calculate_evening_theme(color),
   },
 };
 
-const buildTheme = async (varients) => {
+const buildTheme = async (variants) => {
   try {
     await Promise.all(
-      // For each theme varient
-      Object.entries(varients).map(([variantName, varient]) => {
+      // For each theme variant
+      Object.entries(variants).map(([variantName, variant]) => {
         // Assemble the theme's JSON
-        const themeWithColors = varient.theme({
+        const themeWithColors = variant.theme({
           'name': variantName,
-          'colors': Object.entries(varient.colors).reduce(
+          'colors': Object.entries(variant.colors).reduce(
             (acc, [colorName, colorValue]) => ({
               ...acc,
-              [colorName]: varient.getColor(colorValue)
+              [colorName]: variant.getColor(colorValue)
             }),
             {}
           )

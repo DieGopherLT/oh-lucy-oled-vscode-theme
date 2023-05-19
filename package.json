@@ -2,7 +2,7 @@
   "name": "oh-lucy-vscode",
   "displayName": "oh lucy",
   "description": "a re-upload of a soft but clear syntax theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "Hermitter",
   "repository": "https://github.com/hermitter/oh-lucy-vscode-theme",
   "scripts": {
@@ -27,16 +27,6 @@
         "label": "oh-lucy-evening",
         "uiTheme": "vs-dark",
         "path": "./dist/oh-lucy-evening.json"
-      },
-      {
-        "label": "lucy",
-        "uiTheme": "vs-dark",
-        "path": "./dist/lucy.json"
-      },
-      {
-        "label": "lucy-evening",
-        "uiTheme": "vs-dark",
-        "path": "./dist/lucy-evening.json"
       }
     ]
   },

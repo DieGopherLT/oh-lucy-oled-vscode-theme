@@ -21,10 +21,20 @@
       {
         "label": "oh-lucy",
         "uiTheme": "vs-dark",
-        "path": "./dist/lucy.json"
+        "path": "./dist/oh-lucy.json"
       },
       {
         "label": "oh-lucy-evening",
+        "uiTheme": "vs-dark",
+        "path": "./dist/oh-lucy-evening.json"
+      },
+      {
+        "label": "lucy",
+        "uiTheme": "vs-dark",
+        "path": "./dist/lucy.json"
+      },
+      {
+        "label": "lucy-evening",
         "uiTheme": "vs-dark",
         "path": "./dist/lucy-evening.json"
       }

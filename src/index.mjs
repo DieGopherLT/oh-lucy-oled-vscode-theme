@@ -2,11 +2,11 @@ import { writeFile } from 'fs'
 import { promisify } from 'util'
 import chroma from 'chroma-js'
 // Original Lucy
-import og_theme from './original/theme.mjs'
-import og_colors from './original/colors.mjs'
+import og_theme from './lucy/theme.mjs'
+import og_colors from './lucy/colors.mjs'
 // Oh Lucy
-import theme from './custom/theme.mjs'
-import colors from './custom/colors.mjs'
+import theme from './oh-lucy/theme.mjs'
+import colors from './oh-lucy/colors.mjs'
 
 const promisifiedWriteFile = promisify(writeFile);
 

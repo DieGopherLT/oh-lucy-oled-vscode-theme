@@ -27,7 +27,6 @@ const calculate_evening_theme = (color) => {
 
 const VARIANTS = {
   // Original Lucy themes
-  // Note: Excluded from package.json until Oh Lucy becomes significantly different
   'lucy': {
     theme: og_theme,
     colors: og_colors,
@@ -43,11 +42,6 @@ const VARIANTS = {
     theme: theme,
     colors: colors,
     getColor: (color) => color,
-  },
-  'oh-lucy-evening': {
-    theme: theme,
-    colors: colors,
-    getColor: (color) => calculate_evening_theme(color),
   },
 };
 

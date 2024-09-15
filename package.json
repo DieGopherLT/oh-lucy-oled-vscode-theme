@@ -24,9 +24,14 @@
 				"path": "./dist/oh-lucy.json"
 			},
 			{
-				"label": "oh-lucy-evening",
+				"label": "lucy",
 				"uiTheme": "vs-dark",
-				"path": "./dist/oh-lucy-evening.json"
+				"path": "./dist/lucy.json"
+			},
+			{
+				"label": "lucy-evening",
+				"uiTheme": "vs-dark",
+				"path": "./dist/lucy-evening.json"
 			}
 		]
 	},
@@ -42,8 +47,8 @@
 		"chroma-js": "^2.1.0"
 	},
 	"devDependencies": {
-		"ovsx": "^0.8.1",
-		"vsce": "^2.15.0"
+		"@vscode/vsce": "^3.1.0",
+		"ovsx": "^0.8.1"
 	},
 	"__metadata": {
 		"id": "a97a83b4-05ec-49fe-9265-073a91bb4c49",

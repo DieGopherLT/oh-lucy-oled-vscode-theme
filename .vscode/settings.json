@@ -1,0 +1,24 @@
+{
+    "nix.enableLanguageServer": true,
+    "nix.serverPath": "nil",
+    "nix.serverSettings": {
+        "nil": {
+            "diagnostics": {
+                "ignored": [
+                    "unused_binding",
+                    "unused_with"
+                ]
+            },
+            "formatting": {
+                "command": [
+                    "nixfmt"
+                ]
+            }
+        }
+    },
+}
+// Option 1: Great, but obscure the cursor highlight
+// "diffEditor.insertedTextBackground": "#00ff9532",
+// "diffEditor.insertedLineBackground": "#19ac6a2e",
+// "diffEditor.removedTextBackground": "#ff005532",
+// "diffEditor.removedLineBackground": "#da363333",

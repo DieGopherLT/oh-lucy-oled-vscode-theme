@@ -1,0 +1,28 @@
+{
+    "workbench.colorCustomizations": {
+        "[oh-lucy]": {
+            // Fix character highlights in github diff view
+            // "diffEditor.insertedTextBackground": "#25ff2c17",
+            // "diffEditor.insertedLineBackground": "#76c5a420",
+            // "diffEditor.removedTextBackground": "#ff005525",
+            // "diffEditor.removedLineBackground": "#ff84ad25",
+        }
+    },
+    "nix.enableLanguageServer": true,
+    "nix.serverPath": "nil",
+    "nix.serverSettings": {
+        "nil": {
+            "diagnostics": {
+                "ignored": [
+                    "unused_binding",
+                    "unused_with"
+                ]
+            },
+            "formatting": {
+                "command": [
+                    "nixfmt"
+                ]
+            }
+        }
+    },
+}

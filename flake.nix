@@ -1,7 +1,10 @@
 {
-  inputs = { nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05"; };
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+  };
 
-  outputs = { self, nixpkgs }:
+  outputs =
+    { self, nixpkgs }:
     let
       # Systems supported
       allSystems = [
@@ -11,22 +14,27 @@
         "aarch64-darwin" # 64-bit ARM macOS (not tested)
       ];
 
-      forAllSystems = f:
-        nixpkgs.lib.genAttrs allSystems
-        (system: f { pkgs = import nixpkgs { inherit system; }; });
-    in {
-      devShells = forAllSystems ({ pkgs }: {
-        default = pkgs.mkShell {
-          packages = (with pkgs; [
-            nixfmt
-            nodejs
-            git
+      forAllSystems =
+        f: nixpkgs.lib.genAttrs allSystems (system: f { pkgs = import nixpkgs { inherit system; }; });
+    in
+    {
+      devShells = forAllSystems (
+        { pkgs }:
+        {
+          default = pkgs.mkShell {
+            packages = (
+              with pkgs;
+              [
+                nodejs
+                git
 
-            # Nonessentials
-            starship
-            fish
-          ]);
-        };
-      });
+                # Nonessentials
+                nil
+                nixfmt-rfc-style
+              ]
+            );
+          };
+        }
+      );
     };
 }

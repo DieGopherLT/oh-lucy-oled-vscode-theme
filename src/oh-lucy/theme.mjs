@@ -40,7 +40,7 @@ export default ({ name, colors }) => ({
     'inputValidation.infoBorder': colors.accent1,
     'inputValidation.warningBackground': colors.bacbackground3Halfkground4,
     'inputValidation.warningBorder': colors.accent2,
-    'scrollbar.shadow': colors.background3,
+    'scrollbar.shadow': colors.background1,
     'scrollbarSlider.activeBackground': colors.translucent9,
     'scrollbarSlider.background': colors.translucent9,
     'scrollbarSlider.hoverBackground': colors.translucent9,

@@ -25,5 +25,11 @@ export default {
   translucent6: '#ff84ad0c',
   translucent7: '#ff84ad26',
   translucent8: '#00000000',
-  translucent9: '#ffffff12'
+  translucent9: '#ffffff12',
+
+  // oh-lucy additions
+  oh_translucentGreen1: "#25ff2c17",
+  oh_translucentGreen2: "#76c5a420",
+  oh_translucentRed1: "#ff005525",
+  oh_translucentRed2: "#ff84ad20",
 }

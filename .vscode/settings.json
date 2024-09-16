@@ -1,4 +1,13 @@
 {
+    "workbench.colorCustomizations": {
+        "[oh-lucy]": {
+            // Fix character highlights in github diff view
+            // "diffEditor.insertedTextBackground": "#25ff2c17",
+            // "diffEditor.insertedLineBackground": "#76c5a420",
+            // "diffEditor.removedTextBackground": "#ff005525",
+            // "diffEditor.removedLineBackground": "#ff84ad25",
+        }
+    },
     "nix.enableLanguageServer": true,
     "nix.serverPath": "nil",
     "nix.serverSettings": {
@@ -17,8 +26,3 @@
         }
     },
 }
-// Option 1: Great, but obscure the cursor highlight
-// "diffEditor.insertedTextBackground": "#00ff9532",
-// "diffEditor.insertedLineBackground": "#19ac6a2e",
-// "diffEditor.removedTextBackground": "#ff005532",
-// "diffEditor.removedLineBackground": "#da363333",

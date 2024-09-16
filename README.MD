@@ -1,3 +1,11 @@
+# Overview
+
+A reupload of the [lucy-vscode-theme](https://github.com/jul-sh/lucy-vscode-theme) with the following themes:
+
+- `lucy` & `lucy-evening`: The original theme with color faithful fixes.
+- `oh-lucy`: Basically the original, but with small opinionated changes.
+
+
 ![theme screenshot one](screenshot.jpg)
 
 ---

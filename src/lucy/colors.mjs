@@ -1,3 +1,7 @@
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 export default {
   background1: '#000000',
   background2: '#000000',
@@ -34,4 +38,4 @@ export default {
   oled_selection: '#2d2d2d',
   oled_highlight: '#2a2a2a',
   oled_highlightDark: '#1a1a1a'
-}
+};

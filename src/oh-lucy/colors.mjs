@@ -1,9 +1,9 @@
 export default {
-  background1: '#0e0f15',
-  background2: '#14161e',
-  background3: '#1a1d27',
-  background3Half: '#1F222D',
-  background4: '#292c38',
+  background1: '#000000',
+  background2: '#000000',
+  background3: '#000000',
+  background3Half: '#000000',
+  background4: '#000000',
   selection: '#413b4f',
   dim1: '#494c59',
   dim2: '#5e6173',
@@ -18,8 +18,8 @@ export default {
   base1: '#fb7da7',
   base2: '#e3cf65',
   translucent: '#161821bf',
-  translucent2: '#ffffff26',
-  translucent3: '#ffffff0c',
+  translucent2: '#ffffff40',
+  translucent3: '#ffffff1a',
   translucent4: '#76c5a40c',
   translucent5: '#76c5a426',
   translucent6: '#ff84ad0c',
@@ -32,4 +32,12 @@ export default {
   oh_translucentGreen2: "#76c5a420",
   oh_translucentRed1: "#ff005525",
   oh_translucentRed2: "#ff84ad20",
+  
+  // OLED optimizations
+  oled_pureBlack: '#000000',
+  oled_subtleBorder: '#1a1a1a',
+  oled_faintBorder: '#0d0d0d',
+  oled_selection: '#2d2d2d',
+  oled_highlight: '#2a2a2a',
+  oled_highlightDark: '#1a1a1a',
 }

@@ -1,10 +1,10 @@
 {
-	"name": "oh-lucy-vscode",
+	"name": "oh-lucy-oled-vscode",
 	"displayName": "oh lucy",
-	"description": "a re-upload of a soft but clear syntax theme",
-	"version": "0.0.3",
-	"publisher": "Hermitter",
-	"repository": "https://github.com/hermitter/oh-lucy-vscode-theme",
+	"description": "a re-upload of the oh-lucy theme optimized for OLED displays",
+	"version": "0.0.4",
+	"publisher": "DieGopherLT",
+	"repository": "https://github.com/DieGopherLT/oh-lucy-oled-vscode-theme",
 	"scripts": {
 		"build": "node --experimental-modules src/index.mjs",
 		"release": "npm run build && git add dist && git commit -m build-theme && npm version patch & vsce publish && git push"
@@ -19,17 +19,17 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "oh-lucy",
+				"label": "oh-lucy-oled",
 				"uiTheme": "vs-dark",
 				"path": "./dist/oh-lucy.json"
 			},
 			{
-				"label": "lucy",
+				"label": "lucy-oled",
 				"uiTheme": "vs-dark",
 				"path": "./dist/lucy.json"
 			},
 			{
-				"label": "lucy-evening",
+				"label": "lucy-evening-oled",
 				"uiTheme": "vs-dark",
 				"path": "./dist/lucy-evening.json"
 			}
